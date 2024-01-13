@@ -239,6 +239,6 @@ class ArcPainter extends CustomPainter {
 
   @override
   bool shouldRepaint(covariant ArcPainter oldDelegate) {
-    return true;
+    return oldDelegate.progress != progress;
   }
 }
