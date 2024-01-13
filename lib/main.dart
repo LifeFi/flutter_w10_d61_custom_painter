@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_w10_d61_custom_painter/home_screen.dart';
+import 'package:flutter_w10_d61_custom_painter/home_screen_custom_painter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -8,19 +8,15 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // This widget is the root of your app  lication.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
-          colorScheme: ColorScheme.fromSwatch(
-            backgroundColor: const Color(0xFFe64d3d),
-          ),
-          textTheme: const TextTheme(
-              displayLarge: TextStyle(
-            color: Colors.white,
-          ))),
-      home: const HomeScreen(),
+        primaryColor: const Color(0XFFFE6E73),
+      ),
+      home: const HomeScreenCustomPainter(),
     );
   }
 }
